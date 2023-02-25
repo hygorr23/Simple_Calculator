@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widbutton=device-widbutton, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                
+                <div class="result">
+                    <p id="r"></p>
+                </div>
+                <div class="history">
+                    <p id="h"></p>
+                </div>
+
+            </div>
+                <div class="keyboard">
+                                   
+                        <button class="actions" id="CE" onclick="clearHistory()">CE</button>
+                        <button class="actions" id="C" onclick="clearResult()">C</button>
+                        <button class="actions" id="d" onclick="del()" ><i class="fa-solid fa-delete-left"></i></button>
+                        <button class="operator" id="/" onclick="insertOperator('/')"><i class="fa-solid fa-divide"></i></button>                   
+                        <button class="number" onclick="insertNumber('7')">7</button>
+                        <button class="number" onclick="insertNumber('8')">8</button>
+                        <button class="number" onclick="insertNumber('9')">9</button>
+                        <button class="operator" id="x" onclick="insertOperator('*')"><i class="fa-solid fa-xmark"></i></button>                   
+                        <button class="number" onclick="insertNumber('4')">4</button>
+                        <button class="number" onclick="insertNumber('5')">5</button>
+                        <button class="number" onclick="insertNumber('6')">6</button>
+                        <button class="operator" id="-" onclick="insertOperator('-')"><i class="fa-solid fa-minus"></i></button>                                       
+                        <button class="number" onclick="insertNumber('1')">1</button>
+                        <button class="number" onclick="insertNumber('2')">2</button>
+                        <button class="number" onclick="insertNumber('3')">3</button>
+                        <button class="operator" id="m" onclick="insertOperator('+')"><i class="fa-solid fa-plus"></i></button>                                       
+                        <button class="number" onclick="insertNumber('0')">0</button>
+                        <button class="number" onclick="insertOperator('.')">.</button>
+                        <button class="number" id="i" onclick="iqual()"><i class="fa-solid fa-equals"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

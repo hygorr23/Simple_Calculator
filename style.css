@@ -1,0 +1,95 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background-color: rgb(31, 31, 31);
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: 0px;
+padding: 0px;
+}
+
+.container{
+    background-color: #ff9200;
+background-image: linear-gradient(160deg, #f80000 0%, #e71477 50%, #00ffaa 100%);
+
+    width: 900px;
+    height: 800px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 320px;
+    height: 550px;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 50px ;
+
+}
+
+.history{
+    text-align: right;
+    height: 30px;
+    margin: 0 20px;
+    padding-bottom: 40px;
+
+}
+.result{
+    text-align: right;
+    height: 40px;
+    margin: 10px 20px;
+    font-size: 30px;
+    overflow-wrap:break-word ;
+}
+
+.keyboard{
+    height: 400px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 15px;
+    float: left;
+    border-width: 0;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:active{
+    font-size: 13px;
+
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#i{
+  width: 130px;
+  background-color: #f80000;
+}
+
+.operator{
+    background-color: #000;
+    color: #ffffff;
+}
+.operator:hover{
+    background-color: #000000b9;
+}
+#i:hover{ 
+    background-color: #f80000be;
+}
